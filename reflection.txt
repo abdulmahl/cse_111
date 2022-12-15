@@ -1,0 +1,29 @@
+Please respond thoroughly (at least two sentences for each question) to
+the following three questions.
+
+1. Describe an experience you had this semester where you saw the power of
+functions.
+
+When I was doing one team activity, I realized that fuctions can 
+make breaking down a program with many lines of code simple and 
+manageable, I realized that functions can help organize 
+a program and improve the readability of your code.
+
+2. In your judgment, what is the value of test functions?
+
+Test functions help with making sure that your program works as expected and that
+if bugs occure they can be easily handled, test funtions can help detect any problems 
+with your code, when written properly.
+
+
+3. Describe your process for troubleshooting and fixing a program that
+has a problem. What is one thing you can do to improve your process?
+
+My process would be going through the code line by line trying to 
+out figure where the problem might be, using the debugging functions.
+To improve my process I will also write the try, except, else, and finally
+statements to help handle exceptions the best way I can, and that will also help
+with figuring out where the problem is.
+
+
+

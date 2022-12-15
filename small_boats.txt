@@ -1,0 +1,4 @@
+canoe
+kayak
+skiff
+dinghy
