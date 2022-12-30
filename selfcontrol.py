@@ -1,6 +1,6 @@
 from datetime import datetime as dt
 
-end_time = dt(2023, 12, 31) 
+end_time = dt(2021, 12, 31) 
 
 sites_to_block = ["www.facebook.com", "facebook.com"]
 
