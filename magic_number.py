@@ -5,10 +5,12 @@ def main():
     try:
         guess_count = 0
         guess = -1
-        print()
-        print("""I'm gonna think of a magic number, use your imagination to guess the 
-number. Good thing about this game is that, I will give hints as you try to guess the number. If you guess lower than the magic number, I will give you a hint to guess lower if you guess lower I will give you a hint to guess higher.
+        print("""Think of a magic number, use your imagination to guess the number.
+Good thing about this game is that, you will get hints as you try to guess the number.
+If you guess lower than the magic number, you will get a hint to guess higher if you guess
+higher you will get a hint to guess lower.
 Good luck.""")
+        print()
 
         # Since this is number guessing game
         # we want to check fisrt if the user
@@ -17,18 +19,19 @@ Good luck.""")
         play_again = "yes"
         while play_again == "yes".lower():
             magic_number = random.randint(0, 100)
-            print()
-            # print(magic_number)
+            guess_count += 1
+            # print(f"The magic number is: {magic_number}")
 
             # Using a while loop, get
             # user to geuss the magic number,
             # until they guess the number, user
             # must continue to guess until 
             # they guess the number.
+            guess_count = 0
+            guess = -1
             while guess != magic_number:
                 guess = int(input("Guess the magic number: "))
                 guess_count += 1
-
                 # Give a hint to the user if their guess
                 # was higher, give them
                 # a hint to guess lower.
@@ -47,7 +50,7 @@ Good luck.""")
                 else:
                     if guess == magic_number:
                         print()
-                        print(f"The magic number is {magic_number}, You guessed it.")
+                        print(f"You guessed it! The magic number is {magic_number}.")
                         if guess_count == 1:
                             print(f"It took you {guess_count} guess.")
                         else:
