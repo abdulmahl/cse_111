@@ -14,7 +14,7 @@ disc_rate = .10
 sales_rate =.06
 
 # Ask user for the subtotal, get input from user.
-subtotal = float(input("Enter the subtotal: "))
+subtotal = float(input("Enter subtotal: $"))
 
 # Assign datetime.now to a variable called current_date_and_time
 current_date_and_time = datetime.now()
@@ -28,13 +28,13 @@ weekday = current_date_and_time.weekday()
 # the discount will not apply even if $50.00 or more was spent.
 if subtotal >= 50 and weekday == 0 or weekday == 2:
     discount = round(subtotal * disc_rate, 2)
-    print(f"Discount amount: {discount}")
+    print(f"Discount amount: ${discount}")
     subtotal -= discount
 
 # Compute the sales tax amount, and display it for the user to see.
 sales_tax =  round(subtotal * sales_rate, 2)   
-print(f"sales tax: {sales_tax:.2f}")
+print(f"sales tax: ${sales_tax:.2f}")
 
 # Compute the total amount, then print it out for the user to see.
 total = subtotal + sales_tax
-print(f"Total: {total:.2f}")
+print(f"Total: ${total:.2f}")
